@@ -36,7 +36,7 @@ class _SearchPageState extends State<SearchPage> {
                                 child: GestureDetector(
                                     onTap: () {
                                       showPost(
-                                          context, Users.users[index].post);
+                                          context, filteredUser[index].post);
                                     },
                                     child: Card(
                                         elevation: 0,
@@ -47,9 +47,8 @@ class _SearchPageState extends State<SearchPage> {
                                                 MainAxisAlignment.start,
                                             children: [
                                               CircleAvatar(
-                                                  backgroundImage: AssetImage(
-                                                      Users.users[index]
-                                                          .avatar)),
+                                                  backgroundImage:
+                                                      AssetImage(user.avatar)),
                                               Padding(
                                                   padding:
                                                       const EdgeInsets.only(

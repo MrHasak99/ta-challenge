@@ -80,6 +80,6 @@ showPost(context, img) {
       context: context,
       builder: (context) {
         return Center(
-            child: ClipRRect(child: Image.file(img, height: 300, width: 300)));
+            child: ClipRRect(child: Image.asset(img, height: 300, width: 300)));
       });
 }
